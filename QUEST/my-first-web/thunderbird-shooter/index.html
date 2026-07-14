@@ -34,6 +34,20 @@
     image-rendering: crisp-edges;
     touch-action: none;
   }
+  @keyframes hitshake {
+    0%   { transform: translate(0, 0); }
+    15%  { transform: translate(-6px, 3px); }
+    30%  { transform: translate(6px, -3px); }
+    45%  { transform: translate(-5px, -2px); }
+    60%  { transform: translate(4px, 2px); }
+    75%  { transform: translate(-3px, 1px); }
+    90%  { transform: translate(2px, -1px); }
+    100% { transform: translate(0, 0); }
+  }
+  canvas.shake { animation: hitshake 0.35s ease-in-out; }
+  @media (prefers-reduced-motion: reduce) {
+    canvas.shake { animation: none; }
+  }
   #hud {
     position: absolute; top: 0; left: 0; right: 0;
     display: flex; justify-content: space-between; align-items: flex-start;
@@ -433,6 +447,17 @@
     ctx.fillRect(x|0, y|0, w|0, h|0);
   }
 
+  // Restart the CSS shake animation on the canvas.
+  let shakeTimer = 0;
+  function shakeCanvas() {
+    canvas.classList.remove('shake');
+    // force reflow so re-adding the class replays the animation
+    void canvas.offsetWidth;
+    canvas.classList.add('shake');
+    clearTimeout(shakeTimer);
+    shakeTimer = setTimeout(() => canvas.classList.remove('shake'), 400);
+  }
+
   // ============ Sprites ============
   // Draw red 1950s Ford Thunderbird (side view, pixel art)
   function drawPlayer(x, y, blink) {
@@ -795,6 +820,7 @@
       player.lives -= 1;
       invuln = 1.2;
       burst(player.x + player.w/2, player.y + player.h/2, '#ff4444', 12);
+      shakeCanvas();
       updateLives();
       if (player.lives <= 0) {
         state = STATE.LOSE;
