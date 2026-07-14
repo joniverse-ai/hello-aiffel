@@ -220,7 +220,9 @@
     white-space: nowrap;
   }
 
-  @media (min-width: 768px) {
+  /* Hide on-screen controls only on real desktops (mouse + hover).
+     Touch devices — iPhone, iPad, Android tablets — keep them visible. */
+  @media (hover: hover) and (pointer: fine) {
     #controls { display: none; }
   }
 </style>
