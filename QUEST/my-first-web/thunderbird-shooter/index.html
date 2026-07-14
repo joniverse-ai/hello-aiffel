@@ -220,10 +220,38 @@
     white-space: nowrap;
   }
 
+  #keyhint {
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.55);
+    letter-spacing: 2px;
+    pointer-events: none;
+    z-index: 3;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.85);
+    white-space: nowrap;
+    display: none;
+  }
+  #keyhint .k {
+    display: inline-block;
+    padding: 1px 5px;
+    margin: 0 2px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 3px;
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
   /* Hide on-screen controls only on real desktops (mouse + hover).
-     Touch devices — iPhone, iPad, Android tablets — keep them visible. */
+     Touch devices — iPhone, iPad, Android tablets — keep them visible.
+     Desktop instead gets a subtle keyboard hint at the bottom. */
   @media (hover: hover) and (pointer: fine) {
     #controls { display: none; }
+    #keyhint  { display: block; }
+    #credit   { bottom: 6px; }
   }
 </style>
 </head>
@@ -276,6 +304,14 @@
   </div>
 
   <div id="credit">만든이 · 김채원</div>
+
+  <div id="keyhint">
+    <span class="k">←</span><span class="k">↑</span><span class="k">↓</span><span class="k">→</span>
+    이동
+    &nbsp;·&nbsp;
+    <span class="k">SPACE</span>
+    발사
+  </div>
 </div>
 </div>
 
