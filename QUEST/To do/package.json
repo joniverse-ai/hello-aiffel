@@ -1,0 +1,19 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "로컬 Todo 웹앱",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "todo": "node cli.js"
+  },
+  "bin": {
+    "todo": "./cli.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.0.0",
+    "dotenv": "^16.4.0",
+    "express": "^4.21.0",
+    "helmet": "^8.0.0"
+  }
+}

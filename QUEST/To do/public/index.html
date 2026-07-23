@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Today's to do list</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Nanum+Pen+Script&family=Gowun+Dodum&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="dots-divider top">• • • • • • • • • • • • • • • •</div>
+
+    <header class="title-block">
+      <p class="title-sub">Today's</p>
+      <h1 class="title-script">to do list:</h1>
+    </header>
+
+    <form id="todo-form">
+      <div class="form-row">
+        <input type="text" id="todo-input" placeholder="할 일을 적어보세요..." required maxlength="200">
+        <button type="submit">추가</button>
+      </div>
+      <div class="form-row form-options">
+        <select id="todo-category">
+          <option value="">카테고리 없음</option>
+        </select>
+        <input type="date" id="todo-date">
+        <div id="tag-select" class="tag-select">
+          <span class="tag-select-label">태그 선택...</span>
+          <div id="tag-dropdown" class="tag-dropdown" hidden></div>
+        </div>
+      </div>
+    </form>
+
+    <div class="filter-bar">
+      <button id="filter-all" class="filter-btn active" data-filter="all">전체</button>
+      <button id="filter-today" class="filter-btn" data-filter="today">오늘 할 일</button>
+    </div>
+
+    <div class="list-header">
+      <span class="tick-label">tick when done</span>
+      <span class="task-label">task</span>
+    </div>
+
+    <ul id="todo-list"></ul>
+    <p id="empty-msg" class="empty" hidden>할 일이 없습니다.</p>
+
+    <section class="goal-section">
+      <p class="goal-label">my main goal for today is:</p>
+      <input type="text" id="goal-input" class="goal-input" maxlength="100" placeholder="">
+    </section>
+
+    <section class="calendar-section">
+      <p id="calendar-title" class="calendar-title"></p>
+      <div class="calendar-grid" id="calendar-weekdays"></div>
+      <div class="calendar-grid" id="calendar-days"></div>
+    </section>
+
+    <div class="manage-section">
+      <details>
+        <summary>카테고리 / 태그 관리</summary>
+        <div class="manage-grid">
+          <div class="manage-box">
+            <h3>카테고리</h3>
+            <form id="cat-form" class="manage-form">
+              <input type="text" id="cat-input" placeholder="이름" required maxlength="30">
+              <input type="color" id="cat-color" value="#d9a3a8">
+              <button type="submit">+</button>
+            </form>
+            <ul id="cat-list" class="manage-list"></ul>
+          </div>
+          <div class="manage-box">
+            <h3>태그</h3>
+            <form id="tag-form" class="manage-form">
+              <input type="text" id="tag-input" placeholder="이름" required maxlength="30">
+              <input type="color" id="tag-color" value="#b48ead">
+              <button type="submit">+</button>
+            </form>
+            <ul id="tag-list" class="manage-list"></ul>
+          </div>
+        </div>
+      </details>
+    </div>
+
+    <div class="dots-divider bottom">• • • • • • • • • • • • • • • •</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

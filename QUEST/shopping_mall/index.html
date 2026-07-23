@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>단정 · Danjeong - VIP 에게 마음을 담는 프리미엄 답례 선물 셀렉트샵</title>
+  <link rel="stylesheet" href="styles.css?v=12">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <nav class="nav-left">
+        <a href="#about" class="nav-link">About us</a>
+        <a href="#gift" class="nav-link">Gift</a>
+        <a href="#benefit" class="nav-link">Benefit</a>
+        <a href="#event" class="nav-link">Event</a>
+        <a href="#notice" class="nav-link">Notice</a>
+      </nav>
+      <a href="#" class="logo">
+        <span class="logo-monogram">D</span>
+        <span class="logo-text">Danjeong</span>
+      </a>
+      <div class="nav-right">
+        <div class="lang-dropdown">
+          <button class="nav-util" id="lang-toggle">Language</button>
+          <div class="lang-menu" id="lang-menu">
+            <button class="lang-option active" data-lang="kr">KR</button>
+            <button class="lang-option" data-lang="en">EN</button>
+          </div>
+        </div>
+        <button class="nav-util" id="auth-btn">Log in</button>
+        <button class="nav-icon" id="sns-instagram" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <circle cx="12" cy="12" r="5"/>
+            <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/>
+          </svg>
+        </button>
+        <button class="nav-icon" id="sns-kakao" aria-label="KakaoTalk">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 3C6.48 3 2 6.58 2 10.94c0 2.8 1.86 5.27 4.66 6.67-.15.53-.96 3.4-.99 3.62 0 0-.02.17.09.23.11.07.23.03.23.03.31-.04 3.56-2.33 4.11-2.72.6.09 1.23.13 1.9.13 5.52 0 10-3.58 10-7.96C22 6.58 17.52 3 12 3z"/>
+          </svg>
+        </button>
+        <div class="search-box">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="7"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input type="text" placeholder="검색" class="search-input">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Carousel -->
+  <section class="hero-carousel">
+    <div class="hero-track">
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=1400&q=80');">
+        <div class="hero-overlay"></div>
+        <div class="container">
+          <div class="kicker">For those who send with care</div>
+          <h1>정성을 담아,<br>편안하게 전하는 답례</h1>
+          <p class="subtitle">고객사와 VIP에게 보내는, 절제된 티·커피 페어링 셀렉트.</p>
+        </div>
+      </div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=1400&q=80');">
+        <div class="hero-overlay"></div>
+        <div class="container">
+          <div class="kicker">Curated for every occasion</div>
+          <h1>상황에 맞는<br>단 하나의 세트</h1>
+          <p class="subtitle">계약 감사, 임원 축하, 명절 인사 — 세 가지 상황, 아홉 가지 구성.</p>
+        </div>
+      </div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=1400&q=80');">
+        <div class="hero-overlay"></div>
+        <div class="container">
+          <div class="kicker">Chuseok pre-order open</div>
+          <h1>추석 사전 예약<br>진행 중</h1>
+          <p class="subtitle">마감 전 예약하시면, 계절의 감사를 제때 전할 수 있습니다.</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-dots">
+      <button class="hero-dot active" data-index="0"></button>
+      <button class="hero-dot" data-index="1"></button>
+      <button class="hero-dot" data-index="2"></button>
+    </div>
+  </section>
+
+  <!-- About us -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="kicker">About us</div>
+        <h2 class="section-title">단정 · 端正</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">"차 한 잔의 무게로 이어지는 관계가 있습니다.<br>단정은 그 무게에 어울리는 답례를 만듭니다."</p>
+          <p>단정(端正)은 B2B 초프리미엄 답례 선물 브랜드입니다. 계약 감사, 임원 축하, 명절 인사 — 비즈니스의 중요한 순간마다, 격식과 진심이 동시에 전해지는 티·커피 페어링 세트를 큐레이션합니다.</p>
+          <p>모든 구성은 국내 산지 직송 원료와 장인의 수공예 다식으로 이루어져 있으며, 받는 분이 포장을 여는 순간부터 특별함을 느끼실 수 있도록 린넨 파우치와 손편지 카드까지 함께 담았습니다.</p>
+          <div class="about-signature">
+            <svg viewBox="0 0 260 100" xmlns="http://www.w3.org/2000/svg" class="portrait-signature">
+              <!-- J - large sweeping capital with flourish -->
+              <path d="M18 12 C20 10, 50 8, 52 10 C54 12, 28 14, 28 16 C28 16, 30 14, 36 14 C36 14, 36 30, 35 48 C34 58, 28 68, 18 66 C10 64, 8 56, 12 52" fill="none" stroke="#2B2926" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- o - connected -->
+              <path d="M12 52 C16 48, 42 38, 46 42 M46 42 C42 38, 38 40, 37 45 C36 50, 40 55, 46 53 C50 51, 52 47, 50 44" fill="none" stroke="#2B2926" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- h - connected from o -->
+              <path d="M50 44 C52 36, 54 24, 56 18 C57 14, 58 16, 58 20 C58 28, 57 38, 56 46 M56 38 C60 32, 66 30, 70 34 C73 38, 72 44, 71 50" fill="none" stroke="#2B2926" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- nn - connected double arch -->
+              <path d="M71 50 C72 44, 73 38, 74 36 M74 40 C78 33, 84 31, 88 36 C90 40, 89 46, 88 50 M88 42 C92 34, 98 32, 102 37 C105 42, 103 48, 102 52" fill="none" stroke="#2B2926" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- y - with deep descender flourish -->
+              <path d="M102 52 C104 46, 106 40, 108 36 C109 34, 111 36, 113 42 C115 48, 117 36, 118 34 C119 38, 118 48, 114 58 C110 68, 100 74, 88 70 C78 67, 75 62, 80 58" fill="none" stroke="#2B2926" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- underline flourish -->
+              <path d="M14 72 C40 68, 80 64, 120 62 C140 61, 150 63, 145 66" fill="none" stroke="#2B2926" stroke-width="1.2" stroke-linecap="round" opacity="0.4"/>
+            </svg>
+          </div>
+        </div>
+        <div class="about-visual" style="background-image: url('https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800&q=80');"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gift -->
+  <section id="gift" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="kicker">Gift</div>
+        <h2 class="section-title">선물</h2>
+      </div>
+
+      <div class="category-tabs">
+        <button class="cat-tab active" data-cat="contract">계약 감사</button>
+        <button class="cat-tab" data-cat="executive">임원 축하</button>
+        <button class="cat-tab" data-cat="seasonal">명절 인사</button>
+      </div>
+
+      <div class="sub-tabs">
+        <button class="sub-tab active" data-filter="all">전체</button>
+        <button class="sub-tab" data-filter="tea">티 세트</button>
+        <button class="sub-tab" data-filter="coffee">커피 세트</button>
+        <button class="sub-tab" data-filter="pairing">페어링</button>
+      </div>
+
+      <div class="seasonal-notice" id="seasonal-notice" style="display:none;">
+        <div class="notice">
+          <div class="notice-tag">사전 예약</div>
+          <ul>
+            <li>최소 주문 수량 10 세트</li>
+            <li>주문 마감: O월 O일까지 (수량 소진 시 조기 마감)</li>
+            <li>발송: O월 O일 ~ O월 O일 일괄 발송</li>
+            <li>마감 이후에는 접수가 어렵습니다.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="product-carousel">
+        <button class="carousel-arrow carousel-prev" id="product-prev" aria-label="이전">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="carousel-viewport">
+          <div class="product-track" id="product-grid"></div>
+        </div>
+        <button class="carousel-arrow carousel-next" id="product-next" aria-label="다음">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+      <div class="carousel-indicators" id="carousel-indicators"></div>
+    </div>
+  </section>
+
+  <!-- Benefit -->
+  <section id="benefit" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="kicker">Benefit</div>
+        <h2 class="section-title">단정만의 혜택</h2>
+      </div>
+      <div class="benefit-grid">
+        <div class="benefit-card">
+          <div class="benefit-num">01</div>
+          <h3>대량 주문 할인</h3>
+          <p>30세트 이상 주문 시 세트당 10% 할인이 적용됩니다. 수량이 많을수록 더 합리적인 가격으로 준비하실 수 있습니다.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-num">02</div>
+          <h3>맞춤 패키지</h3>
+          <p>기업 로고 각인, 전용 카드 문구, 포장 커스터마이징까지. 50세트 이상 주문 시 무료로 맞춤 서비스를 제공합니다.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-num">03</div>
+          <h3>전담 컨시어지</h3>
+          <p>상황에 맞는 세트 추천부터 수령인 관리, 일괄 발송까지 전담 담당자가 처음부터 끝까지 함께합니다.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-num">04</div>
+          <h3>정기 구독 프로그램</h3>
+          <p>분기별 자동 발송으로 중요한 시기를 놓치지 마세요. 구독 고객에게는 시즌 한정 세트를 우선 안내해 드립니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Event -->
+  <section id="event" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="kicker">Event</div>
+        <h2 class="section-title">이벤트</h2>
+      </div>
+      <div class="event-list">
+        <a href="#" class="event-card">
+          <div class="event-thumb" style="background-image: url('https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=600&q=80');"></div>
+          <div class="event-info">
+            <span class="event-badge">진행 중</span>
+            <h3>추석 사전 예약 — 얼리버드 15% 할인</h3>
+            <p>2026. 07. 01 ~ 08. 15</p>
+          </div>
+        </a>
+        <a href="#" class="event-card">
+          <div class="event-thumb" style="background-image: url('https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600&q=80');"></div>
+          <div class="event-info">
+            <span class="event-badge event-ended">마감</span>
+            <h3>첫 주문 감사 — 린넨 티코스터 증정</h3>
+            <p>2026. 05. 01 ~ 06. 30</p>
+          </div>
+        </a>
+        <a href="#" class="event-card">
+          <div class="event-thumb" style="background-image: url('https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=600&q=80');"></div>
+          <div class="event-info">
+            <span class="event-badge event-ended">마감</span>
+            <h3>봄맞이 페어링 체험 — 오프라인 시음회</h3>
+            <p>2026. 03. 15 ~ 04. 15</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notice -->
+  <section id="notice" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="kicker">Notice</div>
+        <h2 class="section-title">공지사항</h2>
+      </div>
+      <div class="notice-list">
+        <a href="#" class="notice-row">
+          <span class="notice-cat">안내</span>
+          <span class="notice-title">2026년 추석 사전 예약 일정 안내</span>
+          <span class="notice-date">2026. 07. 01</span>
+        </a>
+        <a href="#" class="notice-row">
+          <span class="notice-cat">배송</span>
+          <span class="notice-title">7월 택배사 물량 증가에 따른 배송 지연 안내</span>
+          <span class="notice-date">2026. 06. 28</span>
+        </a>
+        <a href="#" class="notice-row">
+          <span class="notice-cat">안내</span>
+          <span class="notice-title">단정 공식 카카오톡 채널 오픈 안내</span>
+          <span class="notice-date">2026. 06. 15</span>
+        </a>
+        <a href="#" class="notice-row">
+          <span class="notice-cat">안내</span>
+          <span class="notice-title">여름철 상온 보관 유의사항 안내</span>
+          <span class="notice-date">2026. 06. 01</span>
+        </a>
+        <a href="#" class="notice-row">
+          <span class="notice-cat">이벤트</span>
+          <span class="notice-title">첫 주문 감사 이벤트 당첨자 발표</span>
+          <span class="notice-date">2026. 05. 20</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Auth Modal -->
+  <div class="modal-overlay" id="auth-modal">
+    <div class="modal-content" style="max-width:420px;">
+      <button class="modal-close" id="auth-close" aria-label="닫기">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="auth-body" id="auth-body"></div>
+    </div>
+  </div>
+
+  <!-- Product Modal -->
+  <div class="modal-overlay" id="product-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" aria-label="닫기">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">단정 · Danjeong</div>
+        <div class="footer-info">
+          <p>상호: 단정 | 대표: OOO | 사업자등록번호: 000-00-00000</p>
+          <p>주소: 서울특별시 OO구 OO로 000 | 전화: 02-0000-0000 | 이메일: hello@danjeong.kr</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">이용약관</a>
+          <a href="#">개인정보처리방침</a>
+          <a href="#">사업자정보확인</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Danjeong. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  (function () {
+    /* ── Supabase init ── */
+    var supabase = window.supabase.createClient(
+      'https://ntfalfubipeehucwmysx.supabase.co',
+      'sb_publishable_CcuU5Nssn6zAuay6lOn9HA_4_eiWNq8'
+    );
+
+    /* ── Smooth scroll for nav links ── */
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      var href = a.getAttribute('href');
+      if (a.id === 'auth-btn' || href === '#') return;
+      a.addEventListener('click', function (e) {
+        var target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          var offset = document.querySelector('.site-header').offsetHeight;
+          var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        }
+      });
+    });
+
+    /* ── Active nav highlight on scroll ── */
+    var sections = document.querySelectorAll('.section[id]');
+    var navLinks = document.querySelectorAll('.nav-left .nav-link');
+    window.addEventListener('scroll', function () {
+      var scrollY = window.pageYOffset;
+      var headerH = document.querySelector('.site-header').offsetHeight;
+      sections.forEach(function (sec) {
+        var top = sec.offsetTop - headerH - 40;
+        var bottom = top + sec.offsetHeight;
+        var id = sec.getAttribute('id');
+        navLinks.forEach(function (link) {
+          if (link.getAttribute('href') === '#' + id) {
+            link.classList.toggle('active', scrollY >= top && scrollY < bottom);
+          }
+        });
+      });
+    });
+
+    /* ── Carousel ── */
+    var track = document.querySelector('.hero-track');
+    var dots = document.querySelectorAll('.hero-dot');
+    var total = dots.length;
+    var current = 0;
+    var timer;
+
+    function goTo(i) {
+      current = (i + total) % total;
+      track.style.transform = 'translateX(-' + (current * 100) + '%)';
+      dots.forEach(function (d, idx) { d.classList.toggle('active', idx === current); });
+    }
+    function startAuto() { timer = setInterval(function () { goTo(current + 1); }, 3000); }
+    function resetAuto() { clearInterval(timer); startAuto(); }
+    dots.forEach(function (dot) {
+      dot.addEventListener('click', function () { goTo(Number(dot.dataset.index)); resetAuto(); });
+    });
+    startAuto();
+
+    /* ── Product data ── */
+    var products = [
+      { cat: 'contract', filter: 'pairing', name: '하연 · 白然', caption: '우롱 · 백차 페어링, 4인 세트', price: '180,000', img: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80', moq: '5 세트부터', lead: '결제 후 7 영업일', items: ['동정 우롱 · 30g 캐니스터', '백호은침 · 20g 캐니스터', '흑임자 다식 · 6조각', '백년초 정과 · 4조각', '손편지 카드 · 1장', '린넨 파우치 · 1'], table: ['페어링', '6종', '약 300g', '상온', '12개월'], story: '차 한 잔의 무게로 이어지는 관계가 있습니다. 하연은 그 첫 잔을 위한 세트입니다.' },
+      { cat: 'contract', filter: 'tea',     name: '고요 · 古謠', caption: '보이차 · 다과, 6인 세트', price: '240,000', img: 'https://images.unsplash.com/photo-1563822249366-3efb23b8e0c9?w=600&q=80', moq: '5 세트부터', lead: '결제 후 7 영업일', items: ['노보이차 · 25g 캐니스터', '옥로 · 20g 캐니스터', '은행 다식 · 6조각', '오미자 정과 · 4조각', '손편지 카드 · 1장', '린넨 파우치 · 1'], table: ['티 세트', '6종', '약 350g', '상온', '12개월'], story: '오래된 차에는 시간의 깊이가 있습니다. 고요는 그 시간을 함께 나누는 세트입니다.' },
+      { cat: 'contract', filter: 'coffee',  name: '가온 · 佳穩', caption: '스페셜티 원두 · 페어링, 4인 세트', price: '210,000', img: 'https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=600&q=80', moq: '5 세트부터', lead: '결제 후 7 영업일', items: ['스페셜티 원두 (에티오피아 예가체프) · 200g', '스페셜티 원두 (콜롬비아 게이샤) · 200g', '커피 다식 · 6조각', '배 정과 · 4조각', '손편지 카드 · 1장', '린넨 파우치 · 1'], table: ['커피 세트', '6종', '약 450g', '상온', '12개월'], story: '좋은 원두 한 잔이 대화의 시작이 됩니다. 가온은 그 대화를 위한 세트입니다.' },
+      { cat: 'contract', filter: 'tea',     name: '수안 · 秀安', caption: '대홍포 · 호두정과, 2인 세트', price: '160,000', img: 'https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=600&q=80', moq: '5 세트부터', lead: '결제 후 7 영업일', items: ['대홍포 · 20g 캐니스터', '호두정과 · 6조각', '유기농 꿀 스틱 · 4포', '손편지 카드 · 1장', '린넨 파우치 · 1'], table: ['티 세트', '5종', '약 280g', '상온', '12개월'], story: '작지만 깊은, 감사의 마음을 담아. 수안은 소중한 분을 위한 세트입니다.' },
+      { cat: 'contract', filter: 'coffee',  name: '담헌 · 澹軒', caption: '싱글오리진 드립백 · 양갱 세트', price: '195,000', img: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600&q=80', moq: '5 세트부터', lead: '결제 후 7 영업일', items: ['에티오피아 예가체프 드립백 · 8팩', '팥양갱 · 3조각', '흑임자양갱 · 3조각', '손편지 카드 · 1장', '린넨 파우치 · 1'], table: ['커피 세트', '5종', '약 350g', '상온', '12개월'], story: '드립 한 잔의 고요함과 양갱의 달콤함이 만나, 감사의 오후를 만듭니다.' },
+      { cat: 'executive', filter: 'tea',     name: '소담 · 素淡', caption: '프리미엄 우롱 · 3종 페어링', price: '220,000', img: 'https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=600&q=80', moq: '5 세트부터', lead: '결제 후 7 영업일', items: ['봉황단총 · 20g 캐니스터', '대홍포 · 20g 캐니스터', '동정오룡 · 20g 캐니스터', '견과 다식 · 6조각', '유자 정과 · 4조각', '손편지 카드 · 1장', '실크 파우치 · 1'], table: ['티 세트', '7종', '약 280g', '상온', '12개월'], story: '세 가지 우롱의 결이 다른 향기로, 격식 있는 축하를 전합니다.' },
+      { cat: 'executive', filter: 'pairing', name: '온율 · 溫律', caption: '차 · 커피 믹스 페어링', price: '260,000', img: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80', moq: '5 세트부터', lead: '결제 후 7 영업일', items: ['정산소종 · 25g 캐니스터', '스페셜티 원두 (파나마 게이샤) · 150g', '흑임자 다식 · 6조각', '매실 정과 · 4조각', '손편지 카드 · 1장', '실크 파우치 · 1'], table: ['페어링', '6종', '약 380g', '상온', '12개월'], story: '차와 커피, 두 세계의 조화로 따뜻한 축하의 마음을 전합니다.' },
+      { cat: 'executive', filter: 'coffee',  name: '정연 · 靜然', caption: '스페셜티 원두 · 다과 세트', price: '290,000', img: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600&q=80', moq: '5 세트부터', lead: '결제 후 7 영업일', items: ['스페셜티 원두 (파나마 게이샤) · 200g', '스페셜티 원두 (에티오피아 예가체프) · 200g', '초콜릿 커버쳐 · 8조각', '견과 정과 · 4조각', '손편지 카드 · 1장', '실크 파우치 · 1'], table: ['커피 세트', '6종', '약 420g', '상온', '12개월'], story: '최상급 원두 두 종의 깊이로, 특별한 순간의 무게를 전합니다.' },
+      { cat: 'executive', filter: 'tea',     name: '예림 · 禮林', caption: '철관음 · 한과 페어링, 6인 세트', price: '310,000', img: 'https://images.unsplash.com/photo-1563822249366-3efb23b8e0c9?w=600&q=80', moq: '5 세트부터', lead: '결제 후 7 영업일', items: ['안계 철관음 · 30g 캐니스터', '매작과 · 8조각', '약과 · 4조각', '대추칩 · 30g', '손편지 카드 · 1장', '오동나무 선물함 · 1'], table: ['티 세트', '6종', '약 420g', '상온', '12개월'], story: '철관음의 난향과 한과의 정성이 만나, 예를 갖춘 축하를 전합니다.' },
+      { cat: 'executive', filter: 'pairing', name: '윤하 · 潤夏', caption: '말차 · 콜드브루 듀얼 세트', price: '275,000', img: 'https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=600&q=80', moq: '5 세트부터', lead: '결제 후 7 영업일', items: ['우지 말차 · 30g 캔', '콜드브루 원액 · 500ml', '다식 모둠 · 6조각', '차선 (말차 거품기) · 1', '손편지 카드 · 1장', '린넨 파우치 · 1'], table: ['페어링', '6종', '약 780g', '냉장', '12개월'], story: '말차의 싱그러움과 콜드브루의 깊이가 만나, 여름날의 축하를 시원하게 전합니다.' },
+      { cat: 'seasonal',  filter: 'tea',     name: '한아 · 閑雅', caption: '가을 우롱 · 감귤 정과 세트', price: '150,000', img: 'https://images.unsplash.com/photo-1563822249366-3efb23b8e0c9?w=600&q=80', moq: '10 세트부터', lead: 'O월 O일 일괄 발송', items: ['가을 우롱 · 30g 캐니스터', '정산소종 · 20g 캐니스터', '감귤 정과 · 8조각', '계핏가지 다식 · 6조각', '손편지 카드 · 1장', '계절 린넨 파우치 · 1'], table: ['티 세트', '6종', '약 310g', '상온', '6개월'], story: '가을 차밭의 바람을 담아, 계절의 감사를 전합니다.' },
+      { cat: 'seasonal',  filter: 'tea',     name: '서리 · 霜里', caption: '보이차 · 견과 다식 세트', price: '180,000', img: 'https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=600&q=80', moq: '10 세트부터', lead: 'O월 O일 일괄 발송', items: ['노보이차 · 25g 캐니스터', '옥로 · 20g 캐니스터', '밤 다식 · 8조각', '곶감 정과 · 4조각', '손편지 카드 · 1장', '계절 린넨 파우치 · 1'], table: ['티 세트', '6종', '약 330g', '상온', '6개월'], story: '첫서리의 깊이를 담아, 한 해의 감사를 전합니다.' },
+      { cat: 'seasonal',  filter: 'coffee',  name: '모연 · 暮然', caption: '스페셜티 원두 · 약과 세트', price: '200,000', img: 'https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=600&q=80', moq: '10 세트부터', lead: 'O월 O일 일괄 발송', items: ['스페셜티 원두 (콜롬비아) · 200g', '스페셜티 원두 (수마트라) · 200g', '약과 · 6조각', '유자 정과 · 4조각', '손편지 카드 · 1장', '계절 린넨 파우치 · 1'], table: ['커피 세트', '6종', '약 440g', '상온', '6개월'], story: '해 질 녘 원두의 향과 약과의 달콤함이, 한 해의 마무리를 따뜻하게 합니다.' },
+      { cat: 'seasonal',  filter: 'pairing', name: '채윤 · 彩潤', caption: '녹차 · 커피 · 송편 페어링', price: '170,000', img: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80', moq: '10 세트부터', lead: 'O월 O일 일괄 발송', items: ['제주 녹차 · 20g 캐니스터', '과테말라 드립백 · 4팩', '꿀송편 · 8조각', '손편지 카드 · 1장', '린넨 파우치 · 1'], table: ['페어링', '5종', '약 380g', '냉장', '6개월'], story: '녹차와 커피, 그리고 송편 한 입. 명절의 색을 담아 감사를 전합니다.' },
+      { cat: 'seasonal',  filter: 'coffee',  name: '설아 · 雪雅', caption: '겨울 블렌드 원두 · 유과 세트', price: '190,000', img: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600&q=80', moq: '10 세트부터', lead: 'O월 O일 일괄 발송', items: ['겨울 블렌드 원두 · 200g', '유과 모둠 · 8조각', '흑당 시럽 · 50ml', '손편지 카드 · 1장', '린넨 파우치 · 1'], table: ['커피 세트', '5종', '약 450g', '상온', '6개월'], story: '겨울 원두의 따뜻한 향과 유과의 바삭한 결이, 설날의 마음을 전합니다.' }
+    ];
+
+    var activeCat = 'contract';
+    var activeFilter = 'all';
+    var grid = document.getElementById('product-grid');
+    var notice = document.getElementById('seasonal-notice');
+    var indicators = document.getElementById('carousel-indicators');
+    var prevBtn = document.getElementById('product-prev');
+    var nextBtn = document.getElementById('product-next');
+    var productPage = 0;
+    var productTimer;
+    var VISIBLE = 3;
+
+    function render() {
+      notice.style.display = activeCat === 'seasonal' ? '' : 'none';
+      var filtered = products.filter(function (p) {
+        return p.cat === activeCat && (activeFilter === 'all' || p.filter === activeFilter);
+      });
+      grid.innerHTML = filtered.map(function (p, i) {
+        return '<div class="product-card" data-idx="' + products.indexOf(p) + '">' +
+          '<div class="thumb" style="background-image:url(\'' + p.img + '\')"></div>' +
+          '<h3>' + p.name + '</h3>' +
+          '<p class="caption">' + p.caption + '</p>' +
+          '<div class="price">' + p.price + ' <small>원 / 세트</small></div>' +
+        '</div>';
+      }).join('');
+
+      grid.querySelectorAll('.product-card').forEach(function (card) {
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', function () {
+          openModal(Number(card.dataset.idx));
+        });
+      });
+
+      productPage = 0;
+      var totalPages = Math.ceil(filtered.length / VISIBLE);
+      indicators.innerHTML = '';
+      for (var i = 0; i < totalPages; i++) {
+        var dot = document.createElement('button');
+        dot.className = 'c-dot' + (i === 0 ? ' active' : '');
+        dot.dataset.page = i;
+        dot.addEventListener('click', function () {
+          goToPage(Number(this.dataset.page));
+          resetProductAuto();
+        });
+        indicators.appendChild(dot);
+      }
+      updateSlide();
+      startProductAuto();
+    }
+
+    function goToPage(p) {
+      var cards = grid.querySelectorAll('.product-card');
+      var totalPages = Math.ceil(cards.length / VISIBLE);
+      if (totalPages <= 1) { productPage = 0; }
+      else { productPage = Math.max(0, Math.min(p, totalPages - 1)); }
+      updateSlide();
+    }
+
+    function updateSlide() {
+      var cards = grid.querySelectorAll('.product-card');
+      var totalPages = Math.ceil(cards.length / VISIBLE);
+      if (cards.length > 0) {
+        var viewport = grid.parentElement.offsetWidth;
+        var gap = 24;
+        var offset = productPage * (viewport + gap);
+        grid.style.transform = 'translateX(-' + offset + 'px)';
+      }
+      indicators.querySelectorAll('.c-dot').forEach(function (d, i) {
+        d.classList.toggle('active', i === productPage);
+      });
+      prevBtn.style.display = totalPages <= 1 ? 'none' : '';
+      nextBtn.style.display = totalPages <= 1 ? 'none' : '';
+      prevBtn.disabled = productPage === 0;
+      nextBtn.disabled = productPage >= totalPages - 1;
+    }
+
+    var autoDir = 1;
+    function startProductAuto() {
+      clearInterval(productTimer);
+      var cards = grid.querySelectorAll('.product-card');
+      var totalPages = Math.ceil(cards.length / VISIBLE);
+      if (totalPages > 1) {
+        productTimer = setInterval(function () {
+          if (productPage >= totalPages - 1) autoDir = -1;
+          if (productPage <= 0) autoDir = 1;
+          goToPage(productPage + autoDir);
+        }, 4000);
+      }
+    }
+    function resetProductAuto() { clearInterval(productTimer); startProductAuto(); }
+
+    prevBtn.addEventListener('click', function () { goToPage(productPage - 1); resetProductAuto(); });
+    nextBtn.addEventListener('click', function () { goToPage(productPage + 1); resetProductAuto(); });
+
+    document.querySelectorAll('.cat-tab').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('.cat-tab').forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        activeCat = btn.dataset.cat;
+        activeFilter = 'all';
+        document.querySelectorAll('.sub-tab').forEach(function (b) { b.classList.toggle('active', b.dataset.filter === 'all'); });
+        render();
+      });
+    });
+
+    document.querySelectorAll('.sub-tab').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('.sub-tab').forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        activeFilter = btn.dataset.filter;
+        render();
+      });
+    });
+
+    render();
+
+    /* ── Product Modal ── */
+    var modal = document.getElementById('product-modal');
+    var modalBody = document.getElementById('modal-body');
+    var modalClose = document.getElementById('modal-close');
+
+    function openModal(idx) {
+      var p = products[idx];
+      var nameParts = p.name.split(' · ');
+      modalBody.innerHTML =
+        '<div class="modal-detail">' +
+          '<div class="modal-visual" style="background-image:url(\'' + p.img.replace('w=600', 'w=800') + '\')"></div>' +
+          '<div class="modal-info">' +
+            '<h2>' + nameParts[0] + ' <span class="modal-hanja">' + nameParts[1] + '</span></h2>' +
+            '<p class="caption">' + p.caption + '</p>' +
+            '<div class="price-block"><span class="amount">' + p.price + '</span><span class="unit">원 / 세트</span></div>' +
+            '<div class="meta">' +
+              '<div class="meta-item"><strong>MOQ</strong>' + p.moq + '</div>' +
+              '<div class="meta-item"><strong>리드타임</strong>' + p.lead + '</div>' +
+            '</div>' +
+            '<div class="components"><h4>구성</h4><ul>' + p.items.map(function (li) { return '<li>' + li + '</li>'; }).join('') + '</ul></div>' +
+            '<h5 class="info-table-label">세트 정보</h5>' +
+            '<table class="info-table"><tr><th>구분</th><th>구성수</th><th>총중량</th><th>보관</th><th>유통기한</th></tr>' +
+            '<tr><td>' + p.table.join('</td><td>') + '</td></tr></table>' +
+            '<button class="btn btn-block inquiry-toggle" type="button">주문 문의</button>' +
+            '<form class="inquiry-form" style="display:none;" data-product="' + p.name + '">' +
+              '<h4 class="inquiry-title">주문 문의</h4>' +
+              '<input type="text" name="company" placeholder="회사명 *" required>' +
+              '<input type="text" name="name" placeholder="담당자명 *" required>' +
+              '<input type="email" name="email" placeholder="이메일 *" required>' +
+              '<input type="tel" name="phone" placeholder="연락처">' +
+              '<input type="number" name="quantity" placeholder="희망 수량 (세트)" min="1">' +
+              '<textarea name="message" placeholder="요청사항 (맞춤 포장, 납기일 등)" rows="3"></textarea>' +
+              '<button type="submit" class="btn btn-block">문의 보내기</button>' +
+            '</form>' +
+          '</div>' +
+        '</div>' +
+        '<div class="modal-story"><p>"' + p.story + '"</p></div>';
+
+      var toggleBtn = modalBody.querySelector('.inquiry-toggle');
+      var form = modalBody.querySelector('.inquiry-form');
+      toggleBtn.addEventListener('click', function () {
+        toggleBtn.style.display = 'none';
+        form.style.display = 'block';
+        form.querySelector('[name="company"]').focus();
+      });
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var btn = form.querySelector('[type="submit"]');
+        btn.disabled = true;
+        btn.textContent = '전송 중...';
+        var inquiry = {
+          product_name: form.dataset.product,
+          company: form.company.value,
+          name: form.name.value,
+          email: form.email.value,
+          phone: form.phone.value || null,
+          quantity: form.quantity.value ? Number(form.quantity.value) : null,
+          message: form.message.value || null
+        };
+        if (currentUser) inquiry.user_id = currentUser.id;
+        supabase.from('inquiries').insert(inquiry).then(function (res) {
+          if (res.error) {
+            alert('전송에 실패했습니다. 다시 시도해 주세요.');
+            btn.disabled = false;
+            btn.textContent = '문의 보내기';
+          } else {
+            form.innerHTML = '<div class="inquiry-success"><p>문의가 접수되었습니다.</p><p>빠른 시일 내 답변드리겠습니다.</p></div>';
+          }
+        });
+      });
+
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    modalClose.addEventListener('click', closeModal);
+    modal.addEventListener('click', function (e) {
+      if (e.target === modal) closeModal();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && modal.classList.contains('active')) closeModal();
+    });
+
+    /* ── Event data & modal ── */
+    var events = [
+      {
+        title: '추석 사전 예약 — 얼리버드 15% 할인',
+        badge: '진행 중',
+        ended: false,
+        period: '2026. 07. 01 ~ 08. 15',
+        img: 'https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=800&q=80',
+        desc: '2026년 추석을 맞아, 단정의 명절 인사 세트를 미리 준비하시는 고객님께 감사의 마음을 담아 얼리버드 할인을 제공합니다.',
+        details: [
+          '할인율: 전 명절 세트 15% 할인',
+          '기간: 2026년 7월 1일 ~ 8월 15일 (수량 소진 시 조기 마감)',
+          '대상: 명절 인사 카테고리 전 세트 (한아, 서리, 모연, 채윤, 설아)',
+          '발송: 추석 2주 전 일괄 발송',
+          '중복 할인: 대량 주문 할인과 중복 적용 가능'
+        ],
+        note: '마감 이후에는 정가로 주문 접수되며, 수량에 따라 발송이 지연될 수 있습니다.'
+      },
+      {
+        title: '첫 주문 감사 — 린넨 티코스터 증정',
+        badge: '마감',
+        ended: true,
+        period: '2026. 05. 01 ~ 06. 30',
+        img: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=800&q=80',
+        desc: '단정을 처음 만나는 기업 고객님께, 감사의 마음을 담은 린넨 티코스터 세트를 함께 보내드렸습니다.',
+        details: [
+          '증정품: 수제 린넨 티코스터 2매 세트 (내추럴/차콜)',
+          '기간: 2026년 5월 1일 ~ 6월 30일',
+          '대상: 기간 내 첫 주문 고객 (세트 무관)',
+          '발송: 주문 세트와 함께 동봉'
+        ],
+        note: '본 이벤트는 마감되었습니다. 많은 관심에 감사드립니다.'
+      },
+      {
+        title: '봄맞이 페어링 체험 — 오프라인 시음회',
+        badge: '마감',
+        ended: true,
+        period: '2026. 03. 15 ~ 04. 15',
+        img: 'https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=800&q=80',
+        desc: '단정의 티·커피 페어링을 직접 체험해보실 수 있는 오프라인 시음회를 개최했습니다.',
+        details: [
+          '장소: 서울 성수동 단정 쇼룸',
+          '일시: 2026년 3월 15일 ~ 4월 15일, 매주 토요일 14:00',
+          '내용: 계약 감사 세트 3종 시음 + 페어링 다과 체험',
+          '참가비: 무료 (사전 예약제, 회당 20명 한정)'
+        ],
+        note: '본 이벤트는 마감되었습니다. 다음 시음회 일정은 추후 공지 예정입니다.'
+      }
+    ];
+
+    document.querySelectorAll('.event-card').forEach(function (card, idx) {
+      card.addEventListener('click', function (e) {
+        e.preventDefault();
+        var ev = events[idx];
+        modalBody.innerHTML =
+          '<div class="modal-detail">' +
+            '<div class="modal-visual" style="background-image:url(\'' + ev.img + '\')"></div>' +
+            '<div class="modal-info">' +
+              '<span class="event-badge' + (ev.ended ? ' event-ended' : '') + '" style="display:inline-block;margin-bottom:12px;">' + ev.badge + '</span>' +
+              '<h2>' + ev.title + '</h2>' +
+              '<p class="caption" style="margin-bottom:8px;">' + ev.period + '</p>' +
+              '<p style="font-size:15px;line-height:1.8;color:var(--text-muted);margin-bottom:24px;">' + ev.desc + '</p>' +
+              '<div class="components"><h4>상세 내용</h4><ul>' + ev.details.map(function (d) { return '<li>' + d + '</li>'; }).join('') + '</ul></div>' +
+              '<p style="font-size:13px;color:var(--text-muted);margin-top:20px;padding-top:16px;border-top:1px solid var(--border);">' + ev.note + '</p>' +
+            '</div>' +
+          '</div>';
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    /* ── Notice data & modal ── */
+    var notices = [
+      {
+        cat: '안내',
+        title: '2026년 추석 사전 예약 일정 안내',
+        date: '2026. 07. 01',
+        body: '<p>안녕하세요, 단정입니다.</p><p>2026년 추석을 맞아 명절 인사 세트의 사전 예약을 시작합니다.</p>' +
+          '<h4>예약 일정</h4><ul><li>사전 예약 기간: 2026년 7월 1일(수) ~ 8월 15일(금)</li><li>결제 마감: 8월 15일(금) 18:00</li><li>발송 예정: 9월 중순 일괄 발송</li></ul>' +
+          '<h4>유의사항</h4><ul><li>최소 주문 수량: 10세트</li><li>수량 소진 시 조기 마감될 수 있습니다.</li><li>마감 이후 주문은 정가 적용 및 발송 지연이 발생할 수 있습니다.</li><li>배송지 변경은 발송 3일 전까지 가능합니다.</li></ul>' +
+          '<p>문의사항은 전담 컨시어지(02-0000-0000)로 연락 부탁드립니다.</p>'
+      },
+      {
+        cat: '배송',
+        title: '7월 택배사 물량 증가에 따른 배송 지연 안내',
+        date: '2026. 06. 28',
+        body: '<p>안녕하세요, 단정입니다.</p><p>7월 여름 휴가 시즌 택배 물량 증가로 인해, 일부 지역에서 배송이 1~2일 지연될 수 있습니다.</p>' +
+          '<h4>영향 기간</h4><ul><li>2026년 7월 1일 ~ 7월 31일</li></ul>' +
+          '<h4>해당 지역</h4><ul><li>제주 및 도서산간 지역: 2~3일 추가 소요</li><li>수도권 외 지역: 1~2일 추가 소요 가능</li></ul>' +
+          '<p>중요한 일정에 맞춘 배송이 필요하신 경우, 여유 있게 주문해 주시기 바랍니다. 불편을 드려 죄송합니다.</p>'
+      },
+      {
+        cat: '안내',
+        title: '단정 공식 카카오톡 채널 오픈 안내',
+        date: '2026. 06. 15',
+        body: '<p>안녕하세요, 단정입니다.</p><p>더 빠르고 편리한 소통을 위해 단정 공식 카카오톡 채널을 오픈했습니다.</p>' +
+          '<h4>카카오톡 채널에서 가능한 것</h4><ul><li>신제품 및 시즌 세트 알림</li><li>1:1 주문 상담 및 문의</li><li>이벤트 소식 우선 안내</li><li>배송 상태 조회</li></ul>' +
+          '<p>카카오톡에서 "단정 Danjeong"을 검색하시거나, 하단 카카오톡 아이콘을 통해 채널을 추가해 주세요.</p>'
+      },
+      {
+        cat: '안내',
+        title: '여름철 상온 보관 유의사항 안내',
+        date: '2026. 06. 01',
+        body: '<p>안녕하세요, 단정입니다.</p><p>여름철 높은 기온에 따라, 세트 보관 시 아래 사항을 참고해 주시기 바랍니다.</p>' +
+          '<h4>보관 가이드</h4><ul><li><strong>티 세트 (상온 보관):</strong> 직사광선을 피하고, 서늘하고 건조한 곳에 보관해 주세요. 개봉 후에는 밀봉하여 보관하시면 풍미를 오래 유지할 수 있습니다.</li>' +
+          '<li><strong>커피 세트 (상온 보관):</strong> 원두는 개봉 후 2주 이내 소비를 권장합니다. 미개봉 시 직사광선만 피하시면 됩니다.</li>' +
+          '<li><strong>페어링 세트 (냉장 보관):</strong> 다식·정과류는 수령 즉시 냉장 보관해 주세요. 상온 방치 시 변질될 수 있습니다.</li></ul>' +
+          '<p>더 자세한 보관 방법은 각 세트에 동봉된 안내 카드를 참고해 주세요.</p>'
+      },
+      {
+        cat: '이벤트',
+        title: '첫 주문 감사 이벤트 당첨자 발표',
+        date: '2026. 05. 20',
+        body: '<p>안녕하세요, 단정입니다.</p><p>"첫 주문 감사 — 린넨 티코스터 증정" 이벤트에 참여해 주신 모든 분들께 감사드립니다.</p>' +
+          '<h4>이벤트 결과</h4><ul><li>참여 기업: 총 128개사</li><li>증정 완료: 128세트 (참여 전원 증정)</li></ul>' +
+          '<h4>추가 추첨 당첨</h4><p>참여 기업 중 10개사를 추첨하여 단정 시그니처 린넨 파우치를 추가 발송해 드립니다.</p>' +
+          '<ul><li>당첨 안내는 주문 시 등록하신 이메일로 개별 발송됩니다.</li><li>추가 증정품은 7월 첫째 주 발송 예정입니다.</li></ul>' +
+          '<p>앞으로도 단정을 이용해 주시는 고객님들께 더 좋은 혜택으로 보답하겠습니다.</p>'
+      }
+    ];
+
+    document.querySelectorAll('.notice-row').forEach(function (row, idx) {
+      row.addEventListener('click', function (e) {
+        e.preventDefault();
+        var n = notices[idx];
+        modalBody.innerHTML =
+          '<div class="modal-notice">' +
+            '<div class="modal-notice-header">' +
+              '<span class="notice-cat">' + n.cat + '</span>' +
+              '<span class="notice-date">' + n.date + '</span>' +
+            '</div>' +
+            '<h2>' + n.title + '</h2>' +
+            '<div class="modal-notice-body">' + n.body + '</div>' +
+          '</div>';
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    /* ── Auth system ── */
+    var authModal = document.getElementById('auth-modal');
+    var authBody = document.getElementById('auth-body');
+    var authBtn = document.getElementById('auth-btn');
+    var authClose = document.getElementById('auth-close');
+    var currentUser = null;
+
+    function openAuthModal() {
+      authModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeAuthModal() {
+      authModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    authClose.addEventListener('click', closeAuthModal);
+    authModal.addEventListener('click', function (e) {
+      if (e.target === authModal) closeAuthModal();
+    });
+
+    function showLogin() {
+      authBody.innerHTML =
+        '<div class="auth-form-wrap">' +
+          '<h2>로그인</h2>' +
+          '<form id="login-form">' +
+            '<input type="email" name="email" placeholder="이메일" required>' +
+            '<input type="password" name="password" placeholder="비밀번호" required>' +
+            '<button type="submit" class="btn btn-block">로그인</button>' +
+            '<div class="auth-msg" id="auth-msg"></div>' +
+          '</form>' +
+          '<div class="auth-switch">계정이 없으신가요? <a href="#" id="go-signup">회원가입</a></div>' +
+        '</div>';
+      document.getElementById('go-signup').addEventListener('click', function (e) { e.preventDefault(); showSignup(); });
+      document.getElementById('login-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var form = e.target;
+        var msg = document.getElementById('auth-msg');
+        var btn = form.querySelector('[type="submit"]');
+        btn.disabled = true;
+        btn.textContent = '로그인 중...';
+        supabase.auth.signInWithPassword({
+          email: form.email.value,
+          password: form.password.value
+        }).then(function (res) {
+          if (res.error) {
+            msg.textContent = res.error.message === 'Invalid login credentials' ? '이메일 또는 비밀번호가 올바르지 않습니다.' : res.error.message;
+            msg.className = 'auth-msg error';
+            btn.disabled = false;
+            btn.textContent = '로그인';
+          } else {
+            updateAuthUI(res.data.user);
+            closeAuthModal();
+          }
+        });
+      });
+    }
+
+    function showSignup() {
+      authBody.innerHTML =
+        '<div class="auth-form-wrap">' +
+          '<h2>회원가입</h2>' +
+          '<form id="signup-form">' +
+            '<input type="text" name="company" placeholder="회사명">' +
+            '<input type="text" name="name" placeholder="이름 *" required>' +
+            '<input type="email" name="email" placeholder="이메일 *" required>' +
+            '<input type="tel" name="phone" placeholder="연락처">' +
+            '<input type="password" name="password" placeholder="비밀번호 (6자 이상) *" required minlength="6">' +
+            '<button type="submit" class="btn btn-block">회원가입</button>' +
+            '<div class="auth-msg" id="auth-msg"></div>' +
+          '</form>' +
+          '<div class="auth-switch">이미 계정이 있으신가요? <a href="#" id="go-login">로그인</a></div>' +
+        '</div>';
+      document.getElementById('go-login').addEventListener('click', function (e) { e.preventDefault(); showLogin(); });
+      document.getElementById('signup-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var form = e.target;
+        var msg = document.getElementById('auth-msg');
+        var btn = form.querySelector('[type="submit"]');
+        btn.disabled = true;
+        btn.textContent = '가입 중...';
+        supabase.auth.signUp({
+          email: form.email.value,
+          password: form.password.value
+        }).then(function (res) {
+          if (res.error) {
+            msg.textContent = res.error.message;
+            msg.className = 'auth-msg error';
+            btn.disabled = false;
+            btn.textContent = '회원가입';
+          } else {
+            supabase.from('profiles').update({
+              company: form.company.value || null,
+              name: form.name.value,
+              phone: form.phone.value || null
+            }).eq('id', res.data.user.id).then(function () {
+              if (res.data.session) {
+                updateAuthUI(res.data.user);
+                closeAuthModal();
+              } else {
+                msg.textContent = '가입 확인 이메일을 발송했습니다. 이메일을 확인해주세요.';
+                msg.className = 'auth-msg success';
+                btn.style.display = 'none';
+              }
+            });
+          }
+        });
+      });
+    }
+
+    function showMypage() {
+      authBody.innerHTML =
+        '<div class="auth-form-wrap">' +
+          '<h2>마이페이지</h2>' +
+          '<div class="mypage-loading">불러오는 중...</div>' +
+        '</div>';
+      openAuthModal();
+      supabase.from('profiles').select('*').eq('id', currentUser.id).single().then(function (res) {
+        var p = res.data || {};
+        authBody.innerHTML =
+          '<div class="auth-form-wrap">' +
+            '<h2>마이페이지</h2>' +
+            '<form id="mypage-form">' +
+              '<label class="auth-label">이메일</label>' +
+              '<input type="email" value="' + (currentUser.email || '') + '" disabled>' +
+              '<label class="auth-label">회사명</label>' +
+              '<input type="text" name="company" value="' + (p.company || '') + '" placeholder="회사명">' +
+              '<label class="auth-label">이름</label>' +
+              '<input type="text" name="name" value="' + (p.name || '') + '" placeholder="이름">' +
+              '<label class="auth-label">연락처</label>' +
+              '<input type="tel" name="phone" value="' + (p.phone || '') + '" placeholder="연락처">' +
+              '<button type="submit" class="btn btn-block">저장</button>' +
+              '<div class="auth-msg" id="auth-msg"></div>' +
+            '</form>' +
+            '<div class="mypage-inquiries" id="mypage-inquiries"></div>' +
+            '<button class="btn btn-block btn-logout" id="logout-btn" type="button">로그아웃</button>' +
+          '</div>';
+        document.getElementById('mypage-form').addEventListener('submit', function (e) {
+          e.preventDefault();
+          var form = e.target;
+          var msg = document.getElementById('auth-msg');
+          var btn = form.querySelector('[type="submit"]');
+          btn.disabled = true;
+          btn.textContent = '저장 중...';
+          supabase.from('profiles').update({
+            company: form.company.value || null,
+            name: form.name.value || null,
+            phone: form.phone.value || null
+          }).eq('id', currentUser.id).then(function (res) {
+            if (res.error) {
+              msg.textContent = '저장에 실패했습니다.';
+              msg.className = 'auth-msg error';
+            } else {
+              msg.textContent = '저장되었습니다.';
+              msg.className = 'auth-msg success';
+            }
+            btn.disabled = false;
+            btn.textContent = '저장';
+          });
+        });
+        document.getElementById('logout-btn').addEventListener('click', function () {
+          supabase.auth.signOut().then(function () {
+            currentUser = null;
+            updateAuthUI(null);
+            closeAuthModal();
+          });
+        });
+        supabase.from('inquiries').select('*').eq('user_id', currentUser.id).order('created_at', { ascending: false }).then(function (res) {
+          var box = document.getElementById('mypage-inquiries');
+          if (res.data && res.data.length > 0) {
+            box.innerHTML = '<h3 class="inquiry-history-title">문의 내역</h3>' +
+              res.data.map(function (q) {
+                return '<div class="inquiry-history-item">' +
+                  '<span class="inquiry-product">' + q.product_name + '</span>' +
+                  '<span class="inquiry-date">' + new Date(q.created_at).toLocaleDateString('ko-KR') + '</span>' +
+                '</div>';
+              }).join('');
+          }
+        });
+      });
+    }
+
+    function updateAuthUI(user) {
+      currentUser = user;
+      if (user) {
+        authBtn.textContent = 'My page';
+        authBtn.onclick = function (e) { e.preventDefault(); showMypage(); };
+      } else {
+        authBtn.textContent = 'Log in';
+        authBtn.onclick = function (e) { e.preventDefault(); showLogin(); openAuthModal(); };
+      }
+    }
+
+    authBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (currentUser) {
+        showMypage();
+      } else {
+        showLogin();
+        openAuthModal();
+      }
+    });
+
+    supabase.auth.getSession().then(function (res) {
+      if (res.data.session) {
+        updateAuthUI(res.data.session.user);
+      }
+    });
+
+    supabase.auth.onAuthStateChange(function (event, session) {
+      updateAuthUI(session ? session.user : null);
+    });
+
+    /* ── Language dropdown ── */
+    var langToggle = document.getElementById('lang-toggle');
+    var langMenu = document.getElementById('lang-menu');
+    langToggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      langMenu.classList.toggle('open');
+    });
+    document.addEventListener('click', function () {
+      langMenu.classList.remove('open');
+    });
+    langMenu.querySelectorAll('.lang-option').forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        langMenu.querySelectorAll('.lang-option').forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        langMenu.classList.remove('open');
+      });
+    });
+
+    /* ── SNS modals ── */
+    document.getElementById('sns-instagram').addEventListener('click', function () {
+      modalBody.innerHTML =
+        '<div class="modal-notice">' +
+          '<div class="sns-modal-icon">' +
+            '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">' +
+              '<rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="var(--accent)" stroke="none"/>' +
+            '</svg>' +
+          '</div>' +
+          '<h2 style="text-align:center;">Instagram</h2>' +
+          '<div class="modal-notice-body" style="text-align:center;">' +
+            '<p>단정의 인스타그램에서 새로운 소식과<br>티·커피 페어링 이야기를 만나보세요.</p>' +
+            '<p><strong>@danjeong_official</strong></p>' +
+            '<a href="https://www.instagram.com/" target="_blank" rel="noopener" class="btn btn-block" style="margin-top:20px;background:var(--accent);color:#fff;border-radius:6px;text-transform:none;letter-spacing:0;">인스타그램 바로가기</a>' +
+          '</div>' +
+        '</div>';
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+
+    document.getElementById('sns-kakao').addEventListener('click', function () {
+      modalBody.innerHTML =
+        '<div class="modal-notice">' +
+          '<div class="sns-modal-icon">' +
+            '<svg width="48" height="48" viewBox="0 0 24 24" fill="var(--accent)">' +
+              '<path d="M12 3C6.48 3 2 6.58 2 10.94c0 2.8 1.86 5.27 4.66 6.67-.15.53-.96 3.4-.99 3.62 0 0-.02.17.09.23.11.07.23.03.23.03.31-.04 3.56-2.33 4.11-2.72.6.09 1.23.13 1.9.13 5.52 0 10-3.58 10-7.96C22 6.58 17.52 3 12 3z"/>' +
+            '</svg>' +
+          '</div>' +
+          '<h2 style="text-align:center;">KakaoTalk</h2>' +
+          '<div class="modal-notice-body" style="text-align:center;">' +
+            '<p>카카오톡 채널을 추가하시면<br>1:1 상담과 신제품 알림을 받으실 수 있습니다.</p>' +
+            '<p><strong>단정 Danjeong</strong></p>' +
+            '<a href="https://pf.kakao.com/" target="_blank" rel="noopener" class="btn btn-block" style="margin-top:20px;background:var(--accent);color:#fff;border-radius:6px;text-transform:none;letter-spacing:0;">카카오톡 채널 바로가기</a>' +
+          '</div>' +
+        '</div>';
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+
+    /* ── Header shrink on scroll ── */
+    var header = document.querySelector('.site-header');
+    window.addEventListener('scroll', function () {
+      header.classList.toggle('scrolled', window.pageYOffset > 60);
+    });
+  })();
+  </script>
+</body>
+</html>
